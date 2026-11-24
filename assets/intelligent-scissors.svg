@@ -15,8 +15,9 @@
     @media (prefers-reduced-motion: reduce) { .motion { animation: none !important; } }
   </style>
   <rect x="1" y="1" width="898" height="154" rx="18" fill="var(--paper)" stroke="var(--border)" stroke-width="2"/>
-  <text class="kicker" x="30" y="56">INTERACTIVE IMAGE EDITING</text>
-  <text x="28" y="109" font-size="44" letter-spacing="-1.8" font-weight="750">Intelligent Scissors</text>
+  <text class="kicker" x="30" y="38">JAVA SWING · SHORTEST PATHS</text>
+  <text x="28" y="89" font-size="42" letter-spacing="-1.8" font-weight="750">Intelligent Scissors</text>
+  <text x="30" y="125" font-size="22">I made the outline snap to edges.</text>
   <defs>
     <clipPath id="scissors-left"><rect x="439" y="12" width="132" height="132" rx="11"/></clipPath>
     <clipPath id="scissors-right"><rect x="704" y="12" width="132" height="132" rx="11"/></clipPath>

@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" id="litholens-still" width="900" height="156" viewBox="0 0 900 156" role="img" aria-labelledby="litholens-title litholens-desc">
-  <title id="litholens-title">LithoLens</title>
+  <title id="litholens-title">Meteorite Classification Model</title>
   <desc id="litholens-desc">Meteorite specimen 000019 from the project, shown as an input photograph and a Sobel edge-magnitude map.</desc>
   <style>
 
@@ -15,8 +15,9 @@
     @media (prefers-reduced-motion: reduce) { .motion { animation: none !important; } }
   </style>
   <rect x="1" y="1" width="898" height="154" rx="18" fill="var(--paper)" stroke="var(--border)" stroke-width="2"/>
-  <text class="kicker" x="30" y="56">COMPUTER VISION</text>
-  <text x="28" y="109" font-size="44" letter-spacing="-1.8" font-weight="750">LithoLens</text>
+  <text class="kicker" x="30" y="34">TEAM PROJECT · MODELING</text>
+  <text x="28" y="82" font-size="38" letter-spacing="-1" font-weight="750">Meteorite</text>
+  <text x="28" y="124" font-size="38" letter-spacing="-1" font-weight="750">Classification Model</text>
   <defs>
     <clipPath id="litho-left"><rect x="439" y="12" width="132" height="132" rx="11"/></clipPath>
     <clipPath id="litho-right"><rect x="704" y="12" width="132" height="132" rx="11"/></clipPath>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="210" viewBox="0 0 900 210" role="img" aria-labelledby="prompt-optimizer-title prompt-optimizer-desc">
+  <title id="prompt-optimizer-title">Prompt Optimizer</title>
+  <desc id="prompt-optimizer-desc">Merged contribution: I fixed token reporting for three non-streaming chat providers. In the MiniMax test the caller now receives 30 total tokens, previously missing.</desc>
+  <style>
+    text { font-family:Inter, 'Segoe UI', Arial, sans-serif; fill:var(--ink) }
+    .title { font-size:43px; font-weight:750; letter-spacing:-1.4px }
+    .topic { font-size:17px; font-weight:650; letter-spacing:1.4px; fill:var(--sub) }
+    .line { font-size:25px; font-weight:550 }
+    .label { font-size:18px; font-weight:550; fill:var(--sub) }
+
+    :root { --paper:#f4f1fa; --ink:#352747; --sub:#615270; --rim:#d8cee4; --panel:#e8e0f3; --stroke:#8460a1 }
+    @media (prefers-color-scheme:dark) {
+      :root { --paper:#2a2435; --ink:#f6eefb; --sub:#d0bddd; --rim:#51435e; --panel:#403448; --stroke:#c4a1dc }
+    }
+
+    .packet { animation:forward 5.2s ease-in-out infinite }
+    @keyframes forward { 0%,12%{transform:translateX(-15px);opacity:0} 32%{opacity:1} 64%{transform:translateX(18px);opacity:1} 78%,100%{transform:translateX(18px);opacity:0} }
+    @media (prefers-reduced-motion:reduce) { .packet { animation:none } }
+
+  </style>
+  <rect x="1" y="1" width="898" height="208" rx="18" fill="var(--paper)" stroke="var(--rim)" stroke-width="2"/>
+  <text class="topic" x="31" y="42">OPEN SOURCE · MERGED PR #379</text>
+  <text class="title" x="29" y="99">Prompt Optimizer</text>
+  <text class="line" x="31" y="145">I fixed missing token counts</text>
+  <text class="line" x="31" y="176">for three providers.</text>
+  <rect x="457" y="19" width="421" height="172" rx="13" fill="var(--panel)"/>
+  <text class="label" x="477" y="52">MiniMax test · 10 input + 20 output</text>
+  <path d="M477 67h380" stroke="var(--rim)" stroke-width="2"/>
+  <text class="label" x="477" y="100">Caller before</text>
+  <text class="label" x="702" y="100">Caller after</text>
+  <text x="477" y="148" font-size="28" font-weight="650">Missing</text>
+  <path d="M626 138h48m-8-8 8 8-8 8" fill="none" stroke="var(--stroke)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle class="packet" cx="649" cy="138" r="4" fill="var(--stroke)"/>
+  <text x="702" y="148" font-size="28" font-weight="750">30 tokens</text>
+</svg>

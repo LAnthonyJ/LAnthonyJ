@@ -1,24 +1,56 @@
-<svg xmlns="http://www.w3.org/2000/svg" id="nlp-pytorch-still" width="900" height="156" viewBox="0 0 900 156" role="img" aria-labelledby="nlp-pytorch-title nlp-pytorch-desc">
-  <title id="nlp-pytorch-title">NLP in PyTorch</title>
-  <desc id="nlp-pytorch-desc">Mean accuracy over four tasks on 768 held-out prompts: correct-answer training 52.73%, direct preference optimization 45.57%. The bars use a common zero-to-100% scale.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="210" viewBox="0 0 900 210" role="img" aria-labelledby="nlp-attention-title nlp-attention-desc">
+  <title id="nlp-attention-title">NLP in PyTorch</title>
+  <desc id="nlp-attention-desc">I changed input token 4. The causal attention mask blocks later inputs, so the first three outputs stayed identical. Filled cells show visible inputs and crosses show blocked ones.</desc>
   <style>
+    text { font-family:Inter, 'Segoe UI', Arial, sans-serif; fill:var(--ink) }
+    .title { font-size:43px; font-weight:750; letter-spacing:-1.4px }
+    .topic { font-size:17px; font-weight:650; letter-spacing:1.4px; fill:var(--sub) }
+    .line { font-size:25px; font-weight:550 }
+    .label { font-size:18px; font-weight:550; fill:var(--sub) }
 
-    :root { --paper:#fff2e7; --ink:#4e3023; --sub:#795644; --accent:#ae6043; --tone:#edcfb9; --border:#e8d5c8 }
-    @media (prefers-color-scheme:dark) { :root { --paper:#352922; --ink:#fff0df; --sub:#e3bda6; --accent:#f4ac83; --tone:#5b4031; --border:#5d463a } }
-    text { font-family:Inter,Segoe UI,Arial,sans-serif; fill:var(--ink) }
-    .kicker {font:600 18px 'Segoe UI',Arial,sans-serif;letter-spacing:1.8px;fill:var(--sub)}
-    .label {font-size:20px;font-weight:600}
-    .bar{transform-origin:578px 0;animation:bars 7s cubic-bezier(.2,.7,.3,1) infinite}
-    @keyframes bars{0%,5%{transform:scaleX(.08)} 35%,92%{transform:scaleX(1)} 100%{transform:scaleX(.08)}}
+    :root { --paper:#fff3e7; --ink:#4a3023; --sub:#70543e; --rim:#e8d2bd; --yes:#905439; --off:#f3e2d0; --mark:#805b49 }
+    @media (prefers-color-scheme:dark) {
+      :root { --paper:#342922; --ink:#fff2e4; --sub:#e0baa3; --rim:#58463a; --yes:#e4a379; --off:#48382e; --mark:#d0b6a7 }
+    }
 
-    :root:target .motion { animation: none !important; }
-    @media (prefers-reduced-motion: reduce) { .motion { animation: none !important; } }
   </style>
-  <rect x="1" y="1" width="898" height="154" rx="18" fill="var(--paper)" stroke="var(--border)" stroke-width="2"/>
-  <text class="kicker" x="30" y="56">MODEL EVALUATION</text>
-  <text x="28" y="109" font-size="44" letter-spacing="-1.8" font-weight="750">NLP in PyTorch</text>
-  <text x="419" y="66" font-size="21">Correct answers</text><text x="419" y="108" font-size="21">DPO</text>
-  <g fill="var(--tone)"><rect x="578" y="48" width="200" height="16" rx="6"/><rect x="578" y="90" width="200" height="16" rx="6"/></g>
-  <g fill="var(--accent)" class="bar motion"><rect x="578" y="48" width="105.46" height="16" rx="6"/><rect x="578" y="90" width="91.14" height="16" rx="6"/></g>
-  <text class="label" x="795" y="65">52.73%</text><text class="label" x="795" y="107">45.57%</text>
+  <rect x="1" y="1" width="898" height="208" rx="18" fill="var(--paper)" stroke="var(--rim)" stroke-width="2"/>
+  <text class="topic" x="31" y="42">TRANSFORMER IMPLEMENTATION</text>
+  <text class="title" x="29" y="96">NLP in PyTorch</text>
+  <text class="line" x="31" y="143">I changed input 4. With causal masking,</text>
+  <text class="line" x="31" y="175">the first three outputs stayed the same.</text>
+  <path d="M555 26v158" stroke="var(--rim)" stroke-width="2"/>
+  <text class="label" x="683" y="30">Input token</text>
+  <g text-anchor="middle" font-size="17" font-weight="600">
+    <text x="675" y="53">1</text>
+    <text x="722" y="53">2</text>
+    <text x="769" y="53">3</text>
+    <text x="816" y="53">4</text>
+  </g>
+  <text x="573" y="80" font-size="17">Output 1</text>
+  <rect x="656" y="61" width="38" height="25" rx="5" fill="var(--yes)"/>
+  <rect x="703" y="61" width="38" height="25" rx="5" fill="var(--off)"/>
+  <path d="M718 70l8 8m0-8-8 8" fill="none" stroke="var(--mark)" stroke-width="1.8" stroke-linecap="round"/>
+  <rect x="750" y="61" width="38" height="25" rx="5" fill="var(--off)"/>
+  <path d="M765 70l8 8m0-8-8 8" fill="none" stroke="var(--mark)" stroke-width="1.8" stroke-linecap="round"/>
+  <rect x="797" y="61" width="38" height="25" rx="5" fill="var(--off)"/>
+  <path d="M812 70l8 8m0-8-8 8" fill="none" stroke="var(--mark)" stroke-width="1.8" stroke-linecap="round"/>
+  <text x="573" y="113" font-size="17">Output 2</text>
+  <rect x="656" y="94" width="38" height="25" rx="5" fill="var(--yes)"/>
+  <rect x="703" y="94" width="38" height="25" rx="5" fill="var(--yes)"/>
+  <rect x="750" y="94" width="38" height="25" rx="5" fill="var(--off)"/>
+  <path d="M765 103l8 8m0-8-8 8" fill="none" stroke="var(--mark)" stroke-width="1.8" stroke-linecap="round"/>
+  <rect x="797" y="94" width="38" height="25" rx="5" fill="var(--off)"/>
+  <path d="M812 103l8 8m0-8-8 8" fill="none" stroke="var(--mark)" stroke-width="1.8" stroke-linecap="round"/>
+  <text x="573" y="146" font-size="17">Output 3</text>
+  <rect x="656" y="127" width="38" height="25" rx="5" fill="var(--yes)"/>
+  <rect x="703" y="127" width="38" height="25" rx="5" fill="var(--yes)"/>
+  <rect x="750" y="127" width="38" height="25" rx="5" fill="var(--yes)"/>
+  <rect x="797" y="127" width="38" height="25" rx="5" fill="var(--off)"/>
+  <path d="M812 136l8 8m0-8-8 8" fill="none" stroke="var(--mark)" stroke-width="1.8" stroke-linecap="round"/>
+  <text x="573" y="179" font-size="17">Output 4</text>
+  <rect x="656" y="160" width="38" height="25" rx="5" fill="var(--yes)"/>
+  <rect x="703" y="160" width="38" height="25" rx="5" fill="var(--yes)"/>
+  <rect x="750" y="160" width="38" height="25" rx="5" fill="var(--yes)"/>
+  <rect x="797" y="160" width="38" height="25" rx="5" fill="var(--yes)"/>
 </svg>
