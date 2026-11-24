@@ -5,24 +5,20 @@
 
 ## 🛠️ Selected projects
 
-<h3><a href="https://github.com/LAnthonyJ/datalens-lab"><picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/datalens-still.svg?v=01a9c5da"><img src="./assets/datalens.svg?v=02dd22b0" alt="DataLens Lab" width="100%"></picture></a></h3>
+<h3><a href="https://github.com/linshenkx/prompt-optimizer/pull/379"><picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/prompt-optimizer-still.svg?v=84d8aa7c"><img src="./assets/prompt-optimizer.svg?v=9befba1f" alt="Prompt Optimizer — I fixed missing token counts for three providers. Merged PR 379." width="100%"></picture></a></h3>
 
-Seven packages arrived damaged. What percentage of shipments is that? I fine-tuned Qwen3.5-0.8B and used 24 held-out prompts to test when it asks for missing data and whether its SQL runs correctly. [Experiment results](https://github.com/LAnthonyJ/datalens-lab#what-the-experiments-found) · [Recorded demo](https://github.com/LAnthonyJ/datalens-lab/blob/main/12311701_%E5%BC%A0%E8%88%AA%E6%BA%90.mp4)
+**Open-source contribution.** OpenAI, MiniMax, and DeepSeek returned token counts in non-streaming chat responses, but Prompt Optimizer’s shared parser dropped them. I fixed the parser and added regression tests. In the MiniMax test, the caller now receives all 30 reported tokens (10 input and 20 output). [Merged PR #379](https://github.com/linshenkx/prompt-optimizer/pull/379) · [Code and tests](https://github.com/linshenkx/prompt-optimizer/pull/379/files)
 
-<h3><a href="https://github.com/LAnthonyJ/intelligent-scissors-java"><picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/intelligent-scissors-still.svg?v=1575ec62"><img src="./assets/intelligent-scissors.svg?v=ad9579e9" alt="Intelligent Scissors" width="100%"></picture></a></h3>
+<h3><a href="https://github.com/LAnthonyJ/intelligent-scissors-java"><picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/intelligent-scissors-still.svg?v=abb467eb"><img src="./assets/intelligent-scissors.svg?v=11a0b895" alt="Intelligent Scissors — I connected clicks along image edges using shortest paths." width="100%"></picture></a></h3>
 
-Click along a leaf and the outline follows its edge. I used Sobel gradients and Dijkstra’s shortest-path algorithm in a Java Swing editor to connect the clicks and export a transparent PNG. [Try the leaf sample](https://github.com/LAnthonyJ/intelligent-scissors-java#try-the-leaf-sample)
+I used Sobel gradients to find strong edges and Dijkstra’s algorithm to connect the user’s clicks in a Java Swing editor. The leaf example shows how eight anchors become a transparent PNG. [Try the leaf sample](https://github.com/LAnthonyJ/intelligent-scissors-java#try-the-leaf-sample) · [Pathfinding code](https://github.com/LAnthonyJ/intelligent-scissors-java/blob/main/dsbb_project/src/PathFinder.java)
 
-<h3><a href="https://github.com/LAnthonyJ/-nlp-"><picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/nlp-pytorch-still.svg?v=32c1a384"><img src="./assets/nlp-pytorch.svg?v=21d3bf8b" alt="NLP in PyTorch" width="100%"></picture></a></h3>
+<h3><a href="https://github.com/LAnthonyJ/-nlp-"><picture><img src="./assets/nlp-pytorch.svg?v=3ebb832e" alt="NLP in PyTorch — changing the fourth input leaves the first three outputs unchanged with causal masking." width="100%"></picture></a></h3>
 
-Does a model learn more from seeing its mistakes or from practicing the correct answers? I tested both methods on 768 held-out prompts. Across four tasks, training on correct answers averaged 52.73% accuracy and direct preference optimization averaged 45.57%. [Read the comparison](https://github.com/LAnthonyJ/-nlp-/blob/main/docs/hard-pairs-v3-results/README.md)
+I implemented Transformer attention in PyTorch and tested whether it could read ahead. I changed only the fourth input token. With the causal mask, the largest change in the first three outputs was **0.0**. Removing the mask changed those outputs. [Run the four-token example](https://github.com/LAnthonyJ/-nlp-#can-a-future-token-change-an-earlier-output) · [Attention implementation](https://github.com/LAnthonyJ/-nlp-/blob/main/src/nlp_course/transformer.py) · [Training experiments](https://github.com/LAnthonyJ/-nlp-/blob/main/docs/hard-pairs-v3-results/README.md)
 
-<h3><a href="https://github.com/LAnthonyJ/LithoLens"><picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/litholens-still.svg?v=d68491dd"><img src="./assets/litholens.svg?v=9d94c3d7" alt="LithoLens" width="100%"></picture></a></h3>
+<h3><a href="https://github.com/LAnthonyJ/LithoLens"><picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/litholens-still.svg?v=0c81d1f1"><img src="./assets/litholens.svg?v=1ed34fbb" alt="Meteorite Classification Model — meteorite specimen and its edge map." width="100%"></picture></a></h3>
 
-A meteorite and a terrestrial rock can look alike. I worked on modeling and evaluation in a five-person team. We combined image features with surface texture and reached 0.86046 F1 on the competition’s second-stage private test set. [Explore the specimens](https://github.com/LAnthonyJ/LithoLens#training-data) · [Competition results](https://github.com/LAnthonyJ/LithoLens#competition-results)
+I worked on modeling and evaluation in a five-person team. Our classifier combined image features with surface texture to distinguish meteorites from terrestrial rocks and reached **0.86046 F1** on the competition’s second-stage private test set. [Explore the specimens](https://github.com/LAnthonyJ/LithoLens#training-data) · [Competition results](https://github.com/LAnthonyJ/LithoLens#competition-results)
 
-**More projects** · [A 70-match backtest of World Cup forecasts](https://github.com/LAnthonyJ/worldcup_prediction/blob/master/PROJECT_PROGRESS.md)
-
-## 🌱 Open source
-
-**Prompt Optimizer** · I fixed a case where non-streaming OpenAI, MiniMax, and DeepSeek responses reported token counts that never reached the caller, and added regression tests for all three providers. [Merged PR #379](https://github.com/linshenkx/prompt-optimizer/pull/379)
+**More projects** · [DataLens Lab](https://github.com/LAnthonyJ/datalens-lab) · [A 70-match backtest of World Cup forecasts](https://github.com/LAnthonyJ/worldcup_prediction/blob/master/PROJECT_PROGRESS.md)
