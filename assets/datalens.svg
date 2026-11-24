@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="datalens-still" width="900" height="156" viewBox="0 0 900 156" role="img" aria-labelledby="datalens-title datalens-desc">
+  <title id="datalens-title">DataLens Lab</title>
+  <desc id="datalens-desc">Seven packages are damaged. The assistant asks for the total before calculating a percentage.</desc>
+  <style>
+
+    :root { --paper:#f2f1fb; --ink:#302947; --sub:#5c5079; --accent:#7659a0; --tone:#e2d9f4; --border:#d9d6e8 }
+    @media (prefers-color-scheme:dark) { :root { --paper:#282337; --ink:#f3ecfa; --sub:#c6b4df; --accent:#d3b5fc; --tone:#473859; --border:#514760 } }
+    text { font-family:Inter,Segoe UI,Arial,sans-serif; fill:var(--ink) }
+    .kicker {font:600 18px 'Segoe UI',Arial,sans-serif;letter-spacing:1.8px;fill:var(--sub)}
+    .label {font-size:20px;font-weight:600}
+    .reply {animation:answer 7s ease-out infinite}
+    @keyframes answer {0%,9%{opacity:.18;transform:translateY(8px)} 25%,93%{opacity:1;transform:none} 100%{opacity:.18;transform:translateY(8px)}}
+
+    :root:target .motion { animation: none !important; }
+    @media (prefers-reduced-motion: reduce) { .motion { animation: none !important; } }
+  </style>
+  <rect x="1" y="1" width="898" height="154" rx="18" fill="var(--paper)" stroke="var(--border)" stroke-width="2"/>
+  <text class="kicker" x="30" y="56">LANGUAGE MODELS</text>
+  <text x="28" y="109" font-size="44" letter-spacing="-1.8" font-weight="750">DataLens Lab</text>
+  <path d="M464 20h268a12 12 0 0 1 12 12v23a12 12 0 0 1-12 12H477l-19 9 4-12a10 10 0 0 1-10-11V32a12 12 0 0 1 12-12z" fill="var(--paper)" stroke="var(--border)" stroke-width="2"/>
+  <text class="label" x="479" y="51">7 packages damaged.</text>
+  <g class="reply motion"><path d="M548 81h292a12 12 0 0 1 12 12v23l7 12-21-4H548a12 12 0 0 1-12-12V93a12 12 0 0 1 12-12z" fill="var(--tone)"/>
+    <text class="label" x="558" y="109">Out of how many?</text></g>
+</svg>
