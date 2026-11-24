@@ -9,9 +9,9 @@
 
 I used Sobel gradients to find strong edges and Dijkstra’s algorithm to connect the user’s clicks in a Java Swing editor. The leaf example shows how eight anchors become a transparent PNG. [Try the leaf sample](https://github.com/LAnthonyJ/intelligent-scissors-java#try-the-leaf-sample) · [Pathfinding code](https://github.com/LAnthonyJ/intelligent-scissors-java/blob/main/dsbb_project/src/PathFinder.java)
 
-<h3><a href="https://github.com/LAnthonyJ/meteorite-classification-model"><picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/litholens-still.svg?v=0c81d1f1"><img src="./assets/litholens.svg?v=1ed34fbb" alt="Meteorite Classification Model — meteorite specimen and its edge map." width="100%"></picture></a></h3>
+<h3><a href="https://github.com/LAnthonyJ/meteorite-classification-model"><picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/litholens-still.svg?v=82a69dff"><img src="./assets/litholens.svg?v=02d9b7f7" alt="Meteorite Classification Model. The team submitted test photo 000120 as a meteorite and 000070 as a non-meteorite." width="100%"></picture></a></h3>
 
-I worked on modeling and evaluation in a five-person team. Our classifier combined image features with surface texture to distinguish meteorites from terrestrial rocks and reached **0.86046 F1** on the competition’s second-stage private test set. [Explore the specimens](https://github.com/LAnthonyJ/meteorite-classification-model#training-data) · [Competition results](https://github.com/LAnthonyJ/meteorite-classification-model#competition-results)
+I worked on modeling and evaluation in a five-person team. Our classifier combined image features with surface texture to distinguish meteorites from terrestrial rocks and reached **0.86046 F1** on the competition’s second-stage private test set. [See how the blend changed these two predictions](https://github.com/LAnthonyJ/meteorite-classification-model#which-images-did-the-blend-change) · [Competition results](https://github.com/LAnthonyJ/meteorite-classification-model#competition-results)
 
 ## More projects
 
