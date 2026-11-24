@@ -1,4 +1,4 @@
-# ![Anthony. A rock says “I’m from space.” A paperclip holding a notebook asks “Source?”](./assets/anthony-profile.webp)
+# ![Hi there! Anthony Zhang, data science student at SUSTech, holding a laptop with a leaf sticker.](./assets/anthony-profile.webp?v=a46640f2)
 
 <p align="center"><strong>Hangyuan Zhang</strong> · Data science undergraduate<br>Southern University of Science and Technology (SUSTech) · Expected June 2027</p>
 <p align="center"><a href="https://lanthonyj.github.io/Hangyuan-Zhang-CV.pdf">One-page CV (PDF)</a> · <a href="https://lanthonyj.github.io/">Portfolio</a> · <a href="mailto:zhanghangyuan19@163.com">Email me</a></p>
