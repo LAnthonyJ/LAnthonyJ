@@ -7,6 +7,8 @@
 
 <h3><a href="https://github.com/LAnthonyJ/intelligent-scissors-java"><picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/intelligent-scissors-still.svg?v=abb467eb"><img src="./assets/intelligent-scissors.svg?v=11a0b895" alt="Intelligent Scissors — I connected clicks along image edges using shortest paths." width="100%"></picture></a></h3>
 
+**Intelligent Scissors — Interactive Image Cutout in Java**
+
 I used Sobel gradients to find strong edges and Dijkstra’s algorithm to connect the user’s clicks in a Java Swing editor. The leaf example shows how eight anchors become a transparent PNG. [Try the leaf sample](https://github.com/LAnthonyJ/intelligent-scissors-java#try-the-leaf-sample) · [Pathfinding code](https://github.com/LAnthonyJ/intelligent-scissors-java/blob/main/dsbb_project/src/PathFinder.java)
 
 <h3><a href="https://github.com/LAnthonyJ/meteorite-classification-model"><picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/litholens-still.svg?v=82a69dff"><img src="./assets/litholens.svg?v=02d9b7f7" alt="Meteorite Classification Model. The team submitted test photo 000120 as a meteorite and 000070 as a non-meteorite." width="100%"></picture></a></h3>
@@ -16,10 +18,10 @@ I worked on modeling and evaluation in a five-person team. Our classifier combin
 ## More projects
 
 - **[Language Model for Education](https://github.com/LAnthonyJ/language-model-for-education)** · I fine-tuned Qwen2.5-0.5B for educational questions and tested how preference training changed its answers. [Run the four-token example](https://github.com/LAnthonyJ/language-model-for-education#can-a-future-token-change-an-earlier-output) · [Training experiments](https://github.com/LAnthonyJ/language-model-for-education/blob/main/docs/hard-pairs-v3-results/README.md)
-- **[DataLens Lab](https://github.com/LAnthonyJ/datalens-lab)** · I fine-tuned Qwen3.5-0.8B and tested whether it could write runnable SQL and ask for missing data on 24 held-out prompts. [Experiment results](https://github.com/LAnthonyJ/datalens-lab#what-the-experiments-found)
-- **[World Cup forecasting](https://github.com/LAnthonyJ/worldcup_prediction)** · I compared football score predictions with the outcomes of 70 matches. [Backtest](https://github.com/LAnthonyJ/worldcup_prediction/blob/master/PROJECT_PROGRESS.md)
+- **[DataLens Text-to-SQL](https://github.com/LAnthonyJ/datalens-text-to-sql)** · I fine-tuned Qwen3.5-0.8B to turn English business questions into SQLite queries and checked the results by executing them. [Experiment results](https://github.com/LAnthonyJ/datalens-text-to-sql#checkpoint-comparison)
+- **[Soccer Match Forecasting](https://github.com/LAnthonyJ/soccer-match-forecasting)** · I compared football score predictions with the outcomes of 70 matches. [Backtest](https://github.com/LAnthonyJ/soccer-match-forecasting/blob/master/PROJECT_PROGRESS.md)
 - **[High-frequency stock factors with Hadoop](https://github.com/LAnthonyJ/hadoop-high-frequency-stock-factors)** · A Java MapReduce job computes 20 market-wide factors from five-level order books. In the course benchmark, single-pass aggregation cut runtime from over 100 seconds to 24 seconds. [Worked example](https://github.com/LAnthonyJ/hadoop-high-frequency-stock-factors#from-quotes-to-factors)
-- **[CartPole reinforcement learning](https://github.com/LAnthonyJ/AI_Intellgence_B_Project)** · In this course team project, I updated the behavioral cloning training script to track training loss alongside evaluation scores. [My changes](https://github.com/TOGAWA-NAGASAKI/AI_Intellgence_B_Project/commit/959b80585514db05e79ac854873c558b4647e882)
+- **[CartPole Reinforcement Learning](https://github.com/LAnthonyJ/AI_Intellgence_B_Project)** · In this course team project, I updated the behavioral cloning training script to track training loss alongside evaluation scores. [My changes](https://github.com/TOGAWA-NAGASAKI/AI_Intellgence_B_Project/commit/959b80585514db05e79ac854873c558b4647e882)
 
 ## Open source contributions
 
